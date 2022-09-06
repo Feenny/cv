@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "Open Sans light";
+  src: url(/fonts/OpenSans-Light.ttf);
+
+  font-family: "Open Sans bold";
+  src: url(/fonts/OpenSans-Bold.ttf);
+  
+}
+
+@font-face{
+  font-family: "Gilam";
+  src: url(/fonts/Gilam.otf);
+}
+* {
+  padding: 0;
+}
+
+body {
+  font-family: "Open Sans light";
+  background-color: rgb(23, 30, 37);
+  margin: 0;
+}
+.sticker {
+  width: 17%;
+  position: fixed;
+  bottom: 0;
+}
+
+.container {
+  box-shadow: 0px 0px 10px rgba(3, 6, 14, 0.5);
+  background-image: url(pattern.png);
+  background-size: 400px;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position:relative;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: rgb(241, 241, 239);
+  max-width: 900px;
+  margin: 30px auto;
+}
+h1 {
+  font-family: Steclo;
+  font-size: 55px;
+  color: rgb(245, 222, 209);
+  margin: 10px;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+hr {
+  margin-top: 30px;
+  border-color: rgb(241, 241, 239);
+  width: 300px;
+}
+
+.info {
+  border-bottom: solid rgb(189, 176, 172) 4px;
+  line-height: 30px;
+  display: flex;
+  padding: 20px 8% 10px 8%;
+  background-color: rgb(87, 60, 56);
+  color: rgb(233, 218, 210);
+  margin-bottom: 35px;
+}
+
+.info h2 {
+  color: rgb(241, 126, 122);
+  font-family: "Open Sans bold";
+  text-align: center;
+  margin: 20px 0 0px 0;
+}
+
+.info-text {
+  text-align: justify;
+  margin-left: 40px;
+}
+
+.avatar {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 5%;
+  box-shadow: 2px 5px 10px rgba(49, 39, 29, 0.829);
+}
+
+.card {
+  height: 250px;
+  float: left;
+  box-sizing: border-box;
+  margin-bottom: 15px;
+  padding: 2px 30px;
+  border-radius: 15px;
+  background-color: rgb(245, 244, 244, 0.9);
+  box-shadow: 0px 0px 5px rgba(59, 53, 46, 0.137);
+}
+.card:nth-child(odd) {
+  width: 44%;
+  margin-left: 5%;
+}
+.card:nth-child(even) {
+  width: 35%;
+  margin-left: 8%;
+}
+h2:not(.info h2) {
+  color: rgb(218, 98, 94);
+  font-size: 16px;
+  font-family: "Open Sans bold";
+  text-align: center;
+}
+
+.card2 {
+  width: 84%;
+  margin: 0 8% 15px 8%;
+  float: left;
+  box-sizing: border-box;
+  padding: 2px 30px;
+  border-radius: 15px;
+  background-color: rgb(245, 244, 244, 0.9);
+  box-shadow: 0px 0px 5px rgba(59, 53, 46, 0.137);
+}
+
+.table {
+  width: 100%;
+}
+
+a {
+  color: rgb(219, 117, 106);
+  text-decoration: none;
+}
+a:hover {
+  color: salmon;
+  text-decoration: underline;
+}
+
+table td {
+  padding-bottom: 10px;
+  padding-left: 30px;
+}
+
+.education table {
+  border-left: salmon solid 6px;
+  line-height: 150px;
+  margin: 10% 0;
+}
+
+.education table td {
+  width: 50%;
+  line-height: 22px;
+}
+
+.skills ul{
+  margin: 0;
+}
+.skills td {
+  margin: 0;
+  width: 50%;
+}
+
+.skills li {
+  list-style-type: none;
+}
+
+.skills li::before {
+  font-size: 25px;
+  content: "●";
+  color: salmon;
+  padding-right: 10px;
+}
+
+.hobby p {
+  border-left: solid salmon 6px;
+  text-align: justify;
+  line-height: 25px;
+  padding: 0 15px;
+}
+
+.work p {
+  border-left: solid salmon 6px;
+  text-align: justify;
+
+  line-height: 25px;
+  padding: 0 15px;
+}
+
+.social>*:not(h2){
+  font-family: "Open sans regular";
+  float: left;
+  margin: 3% 4% 3% 3% ;
+  display: block;
+  box-sizing: border-box;
+}
+.contact{
+  margin-bottom: 30px;
+}
+.form-group label{
+  display: block;
+  font-size: 14px;
+}
+.form-group input, .form-group textarea{
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 0 6px;
+  outline: none;
+  font-family: inherit;
+}
+
+.row  {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.row > .form-group{
+  width: 50%; 
+  
+}
+
+.row > .form-group:first-child{
+  margin-right: 35px;
+}
+
+.btn{
+  font-size: 15px;
+  font-family: "Open sans bold";
+  color:rgb(255, 255, 255);
+   padding: 10px;
+   margin: 5px 0 15px;
+   border: none;
+   background-color: rgb(231, 132, 121);
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn:hover{
+ opacity: 0.9; 
+}
+
